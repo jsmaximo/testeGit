@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script>
+var email = 'claudiasilva@gmail.com';
+var senha = '123456';
+var url = 'https://api.mlab.com/api/1/databases/oiadvsandbox/collections/users?apiKey=daiscaeSuyW0J4obBPD3WIvOKjd3TsYf';
+
+fetch(url)
+.then(r => r.json())
+.then(users =>{
+
+users.forEach(user =>{
+  console.info('usuarios', user);
+});
+
+});//foreach users
+
+</script>
+</body>
+</html>
